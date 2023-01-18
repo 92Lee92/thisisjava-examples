@@ -32,9 +32,13 @@ public class Q7 {
 				System.out.println("잔고>" + balance);
 				System.out.println();
 				continue;
-			default:
+			case "4":
 				System.out.println();
 				System.out.println("프로그램 종료");
+				break;
+			default:
+				System.out.println("1~4 중에 선택하세요");
+				continue;
 			}
 		}
 	}
