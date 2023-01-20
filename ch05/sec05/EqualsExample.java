@@ -59,5 +59,21 @@ public class EqualsExample {
 		if (strVar1.equals(strVar4)) {
 			System.out.println("strVar1 과 strVar3는 문자열이 같음");
 		}
+
+		String[] strs = { "책", "컴퓨터" };
+		String str1 = new String("책");
+		String str2 = strs[0];
+		String str3 = "책";
+
+		if (str1 == str2) {
+			System.out.println("str1 과 str2는 참조가 같음");
+		} else {
+			System.out.println("str1 과 str2는 참조가 다름");
+		}
+		if (str2 == str3) {
+			System.out.println("str2 과 str3는 참조가 같음");
+		} else {
+			System.out.println("str2 과 str3는 참조가 다름");
+		}
 	}
 }
