@@ -1,0 +1,8 @@
+package ch05.my12;
+
+public enum Quarters {
+	FIRST_QUARTER,
+	SECOND_QUARTER,
+	THIRD_QUARTER,
+	FOURTH_QUARTER
+}

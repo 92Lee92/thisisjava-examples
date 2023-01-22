@@ -15,7 +15,7 @@ public class SplitExample {
 		System.out.println("성명: " + tokens[3]);
 		System.out.println();
 
-		// for 문을 이요한 읽기
+		// for 문을 이용한 읽기
 		for (int i = 0; i < tokens.length; i++) {
 			System.out.println(tokens[i]);
 		}

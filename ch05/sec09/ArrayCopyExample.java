@@ -15,6 +15,36 @@ public class ArrayCopyExample {
 		}
 		System.out.println();
 		System.out.println(oldStrArray[0] == newStrArray[0]);
+		
+		// 궁금한거 TEST 참조변수를 저장하는 배열의 복사
+		
+		ArrayCopyReferenceExample[] arrayCopyReferenceExampleArr = new ArrayCopyReferenceExample[2];
+		arrayCopyReferenceExampleArr[0] = new ArrayCopyReferenceExample();
+		arrayCopyReferenceExampleArr[1] = new ArrayCopyReferenceExample();
+		
+		arrayCopyReferenceExampleArr[0].add(2, 4);
+		arrayCopyReferenceExampleArr[1].add(1, 1);
+		
+		System.out.println(arrayCopyReferenceExampleArr[0].result);
+		System.out.println(arrayCopyReferenceExampleArr[1].result);
+		
+		ArrayCopyReferenceExample[] arrayCopyReferenceExampleArr2 = new ArrayCopyReferenceExample[2];
+		for ( int i = 0; i < arrayCopyReferenceExampleArr.length ; i++) {
+			arrayCopyReferenceExampleArr2[i] = arrayCopyReferenceExampleArr[i];
+		}
+		System.out.println(arrayCopyReferenceExampleArr[0].result);
+		System.out.println(arrayCopyReferenceExampleArr[1].result);
+		System.out.println();
+		System.out.println(arrayCopyReferenceExampleArr2[0].result);
+		System.out.println(arrayCopyReferenceExampleArr2[1].result);
+		System.out.println();
+		arrayCopyReferenceExampleArr[0].result = 3;
+		arrayCopyReferenceExampleArr[1].result = 5 ;
+		System.out.println(arrayCopyReferenceExampleArr[0].result);
+		System.out.println(arrayCopyReferenceExampleArr[1].result);
+		System.out.println();
+		System.out.println(arrayCopyReferenceExampleArr2[0].result);
+		System.out.println(arrayCopyReferenceExampleArr2[1].result);
 	}
 
 }
