@@ -9,7 +9,7 @@ public class BitLogicExample {
 		System.out.println("~45 = " + (~45));
 		System.out.println("--------------------------");
 		
-		byte receiveData = -128;
+		byte receiveData = -120;
 		
 		// 방법1: 비트 논리곱 연산으로 Unsigned 정수 얻기
 		int unsignedInt1 = receiveData & 255;
